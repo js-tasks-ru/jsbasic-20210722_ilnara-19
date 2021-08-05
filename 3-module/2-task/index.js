@@ -1,6 +1,5 @@
 let arr = [5, 3, 8, 1];
 
-
 function filterRange(arr, a, b) {
   let arrNew = [];
 
@@ -11,7 +10,6 @@ function filterRange(arr, a, b) {
       arrNew.push(arr[i]);
     }
   }
-  
   return arrNew;
 }
 
