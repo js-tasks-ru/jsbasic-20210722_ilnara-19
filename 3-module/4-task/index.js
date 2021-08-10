@@ -30,17 +30,16 @@ for (let i = 0; i < users.length; i++) {
   if(users[i].age <=  age) {
     str.push(users[i].name);
     str.push(users[i].balance);
-    str.push(' \n');
   }
-}  
+}
 
 if(str.lastIndexOf('\n') != -1) {
   let indexItem = str.lastIndexOf('\n');
   str.splice(indexItem, 1);
 }
 
-   strNew = str.join(' '); 
-   return strNew;
+  strNew = str.join('\n'); 
+  return strNew;
 }
 
 
