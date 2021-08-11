@@ -1,16 +1,11 @@
-let str = '1 и -5.8 или 10 хотя 34 + -5.3 и 73';
-
-let arr = [];
-
-let arrNew = [];
-
-let arrNum = [];
-
-let num;
-
-let result = {};
 
 function getMinMax(str) {
+  let arr = [];
+  let arrNew = [];
+  let arrNum = [];
+  let num;
+
+let result = {};
   arr = str.split(' ');
 
   for (let i = 0; i < arr.length; i++) {
@@ -47,5 +42,3 @@ function getMinMax(str) {
 
   return result;
 }
-
-console.log(getMinMax(str)); // { min: -5.8, max: 73  }
