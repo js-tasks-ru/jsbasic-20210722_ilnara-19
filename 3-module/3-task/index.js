@@ -12,8 +12,7 @@ function camelize(str) {
   while (arr.indexOf ('-') != -1) {
     itemIndex = arr.indexOf('-'); 
     arr.splice(itemIndex, 1); 
-    arr[itemIndex] = arr[itemIndex].toUpperCase() +       arr[itemIndex+1];  
-    arr.splice(itemIndex + 1, 1); 
+    arr[itemIndex] = arr[itemIndex].toUpperCase();  
   }
   
   strNew = arr.join('');
