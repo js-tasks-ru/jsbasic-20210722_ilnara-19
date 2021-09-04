@@ -4,6 +4,9 @@ function initCarousel() {
   let carouselInner = document.querySelector('.carousel__inner');
   
   let widthSlider = 0;
+  if(widthSlider == 0) {
+    arrowLeft.style.display = 'none';
+  }
   arrowRight.addEventListener('click', function() {
     widthSlider = widthSlider + carouselInner.offsetWidth;
     if(widthSlider > carouselInner.offsetWidth*2) {
