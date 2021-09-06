@@ -19,7 +19,7 @@ function highlight(table) {
     }
     
     if (Number(table.rows[i].cells[1].textContent) < 18) {
-      table.rows[i].cells[1].style.textDecoration = 'line-through';
+      table.rows[i].style.textDecoration = 'line-through';
     }
   }
 }
